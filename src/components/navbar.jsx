@@ -2,14 +2,14 @@ import React from 'react';
 
 //Stateles FUnctional Component
 
-const NavBar = (props) => {
+const NavBar = ({totalCounters}) => {
     return ( 
         <nav className="navbar navbar-light bg-light">
             <a className="navbar-brand" href="#">
             Navbar {" "}
             <span 
                 className="badge badge-pill badge-secondary">
-            {props.totalCounter}
+            {totalCounters}
             </span>
         </a>
 </nav>  );
